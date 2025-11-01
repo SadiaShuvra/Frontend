@@ -6,11 +6,11 @@
     <title>Faculty of Engineering - University of Barishal</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* Base Styles and Variables */
+        
         :root {
-            --primary-blue: #1e3a8a; /* Deep Blue, for main navigation and buttons */
-            --secondary-blue-light: #697AE8; /* New Blue-Lavender color for the top strip and notice bar */
-            --accent-yellow: #f59e0b; /* Amber/Yellow */
+            --primary-blue: #1e3a8a;
+            --secondary-blue-light: #697AE8; 
+            --accent-yellow: #f59e0b; 
             --text-dark: #1f2937;
             --text-light: #f3f4f6;
             --bg-light: #f9fafb;
@@ -25,7 +25,7 @@
             color: var(--text-dark);
         }
 
-        /* Utility Classes */
+        
         .container {
             max-width: 1280px;
             margin: 0 auto;
@@ -40,7 +40,7 @@
             text-align: center;
         }
 
-        /* --- TOP STRIP STYLES (University Title, Contact, Login) --- */
+        
         .top-strip {
             background-color: var(--secondary-blue-light); 
             color: white;
@@ -95,7 +95,7 @@
             color: var(--accent-yellow);
         }
         
-        /* Header / Navigation (Faculty specific bar) */
+        
         .header {
             background-color: var(--primary-blue);
             color: white;
@@ -106,15 +106,15 @@
         }
 
         .navbar {
-            /* Changed to space-between to accommodate the logo in the middle */
+            
             display: flex;
             justify-content: space-between; 
             align-items: center;
             height: 3.5rem;
-            position: relative; /* Set to relative for logo absolute positioning context */
+            position: relative; 
         }
         
-        /* Styles for the centered, overlapping logo */
+        
         .logo-group {
             display: flex;
             justify-content: center;
@@ -123,28 +123,28 @@
             position: absolute; 
             left: 50%;
             transform: translate(-50%, 0);
-            top: -2.5rem; /* Moves the center logo upwards to overlap */
+            top: -2.5rem; 
             z-index: 1010;
         }
 
         .faculty-logo {
-            width: 80px; /* Logo size */
+            width: 80px; 
             height: 80px;
             object-fit: contain;
             border-radius: 50%;
-            background-color: white; /* White background for the rounded logo */
+            background-color: white; 
             padding: 2px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         .nav-menu {
-            /* Split the menu into two groups to put the logo in the middle */
+            
             display: none;
             flex-grow: 1;
             justify-content: space-around; 
             font-size: 0.875rem;
             font-weight: 600;
-            width: 100%; /* Ensure the menu uses full width */
+            width: 100%; 
             position: relative; 
             z-index: 1005;
         }
@@ -157,7 +157,7 @@
             }
         }
         
-        /* New menu split container */
+       
         .menu-split {
             display: flex;
             gap: 1.5rem;
@@ -220,7 +220,7 @@
             background-color: var(--primary-blue);
         }
 
-        /* --- NOTICE BAR STYLES --- */
+       
         .notice-bar {
             background-color: var(--secondary-blue-light);
             color: white;
@@ -262,7 +262,7 @@
             100% { transform: translate(-100%, 0); }
         }
         
-        /* --- DEPARTMENT GRID STYLES --- */
+       
         .departments-grid {
             display: grid;
             gap: 2rem; /* Spacing between cards */
@@ -321,7 +321,7 @@
             color: #4b5563;
             font-size: 0.875rem;
             margin-bottom: 1rem;
-            min-height: 3rem; /* ensure cards have roughly the same height */
+            min-height: 3rem; 
         }
 
         .dept-link {
@@ -339,7 +339,7 @@
             background-color: #d97706; /* Darker yellow on hover */
         }
         
-        /* Rest of the styles (Hero, Dean, Highlights, Footer) */
+        
 
         .hero {
             position: relative;
@@ -414,13 +414,13 @@
             }
         }
 
-        /* Dean's Photo Styling - BORDER REMOVED */
+        
         .dean-photo {
             width: 160px;
             height: 192px;
             object-fit: cover;
             border-radius: 0.5rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Softer shadow */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
         }
         
         .footer {
@@ -430,20 +430,9 @@
             padding-bottom: 1.5rem;
         }
 
-        .logo-placeholder {
-            width: 2.5rem; 
-            height: 2.5rem; 
-            background-color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--secondary-blue-light);
-        }
+        
 
-        /* Highligh Grid Styles (Ensuring they remain responsive) */
+        
         .highlights-grid {
             display: grid;
             gap: 2rem;
@@ -468,9 +457,9 @@
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
         }
 
-        .highlight-card.research { background-color:grey; } /* Emerald Green */
-        .highlight-card.administration { background-color: purple; } /* Regular Blue */
-        .highlight-card.notice { background-color: blue; } /* Red */
+        .highlight-card.research { background-color:grey; } 
+        .highlight-card.administration { background-color: purple; } 
+        .highlight-card.notice { background-color: blue; } 
         
         .highlight-card h3 {
             font-size: 1.5rem;
@@ -554,7 +543,7 @@
     <div class="top-strip">
         <div class="container top-bar-content">
             <div class="university-title-group">
-                <div class="logo-placeholder">UB</div>
+                
                 <span class="main-university-name">UNIVERSITY OF BARISHAL</span>
             </div>
             
@@ -796,4 +785,5 @@
     
 
 </body>
+
 </html>
